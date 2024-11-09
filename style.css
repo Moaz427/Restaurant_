@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+:root{
+    --orange: orange;
+}
+.w-90{
+    width: 90%;
+    margin: 0 auto;
+}
+/* section 1 */
+.sec1{
+    background-image: url(images/home_bg.jpeg);
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    color: white;
+}
+.sec1 header nav img{
+    width: 90px;
+}
+.contanir header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+.sec1 header nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-family: "Roboto", sans-serif;
+    position: relative;
+}
+.sec1 header nav ul li a::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 4px;
+    background-color: var(--orange);
+    bottom: -5px;
+    left: 0;
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+.sec1 header nav ul li:hover a::after{
+    width: 58px;
+}
+.sec1 header nav ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.content{
+    height: 35rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.content h2{
+    font-size: 35px;
+    word-spacing: 6px;
+}
+.content span {
+    color: var(--orange);
+}
+.content button{
+    border: 1px white solid;
+    padding: 10px 20px;
+    background: transparent;
+    color: aliceblue;
+    border-radius: 8px;
+    transition: all 0.8s;
+    font-size: 15px;
+    cursor: pointer;
+}
+.content button:hover{
+    background-color: white;
+    color: black;
+}
+/* section 2 */
+.sec2{
+    margin-top: 90px;
+    height: 100vh;
+}
+.top-text{
+    text-align: center;
+    color: rgb(137, 145, 152);
+}
+.top-text h2{
+    font-size: 35px;
+    color: black;
+    margin-bottom: 20px;
+}
+.top-text p{
+    font-size: 15px;
+}
+.main{
+    margin-top: 45px;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+}
+.text{
+    width: 50%;
+}
+.image{
+    width: 42%;
+    height: 450px;
+}
+.image img{
+    width: 100%;
+    height: 100%;
+}
+.text p{
+    line-height: 21px;
+    word-spacing: 5px;
+    color: rgb(137, 145, 152);
+    font-size: large;
+    margin-bottom: 30px;
+}
+.text button{
+    background-color: rgb(55, 54, 54);
+    padding: 13px 30px;
+    color: white;
+    border: 2px rgb(55, 54, 54) solid;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.text button:hover{
+    color: rgb(55, 54, 54);
+    background-color: transparent;
+}
+/* section 3 */
+.sec3{
+    background-image: url(images/offer-background.jpg);
+    color: white;
+    height: 80vh;
+    background-size: cover;
+    position: relative;
+}
+.text1{
+    text-align: center;
+    padding-top: 50px;
+    margin-bottom: 50px;
+}
+.text1 h1{
+    color: var(--orange);
+    font-size: 33px;
+    margin-bottom: 10px;
+}
+.text1 p{
+    font-size: 13px;
+}
+.offer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+small{
+    font-size: 13px;
+    text-decoration: line-through;
+}
+.offer span{
+    color: var(--orange);
+    font-size: 18px;
+}
+#left{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    font-size: 45px;
+    margin-left: 10px;
+    padding-left: 5px;
+    background-color: rgb(137, 145, 152);
+    cursor: pointer;
+}
+#right{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    font-size: 45px;
+    margin-right: 10px;
+    padding-right: 5px;
+    background-color: rgb(137, 145, 152);
+    cursor: pointer;
+}
